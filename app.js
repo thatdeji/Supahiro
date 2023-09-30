@@ -46,7 +46,7 @@ const saveTheDay = (e) => {
   const resultWrapper = document.getElementById(`result-${index}`);
   document.querySelector(`.loader-${index}`).classList.remove('none');
   // Fetches data from superhero API
-  fetch(`https://superheroapi.com/api/${apiKey}/search/${inputValue}`)
+  fetch(`https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/${apiKey}/search/${inputValue}`)
   .then(res => res.json())
   .then(res => {
     // Data from API
